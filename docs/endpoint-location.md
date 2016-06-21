@@ -58,7 +58,7 @@ The structure of the concatenated string is as follows:
 ```
 Endpoint Address \| Interaction \| Format \| Business Scenario \| Compressed?
 
-http://SampleHostname/SendCDADocument\|urn:nhs-itk:interaction:primaryOutOfHoursRecipientNHS111CDADocument-v2-0\|CDA\|Primary\|True
+http://SampleHostname/SendCDADocument\|urn:nhs-itk:interaction:primaryOutOfHoursRecipientNHS111CDADocument-v2-0\|CDA\|Primary\|Compressed
 
-email.address@nhs.net\|urn:nhs-itk:interaction:primaryEmergencyDepartmentRecipientNHS111CDADocument-v2-0\|PDF\|Primary\|True
+email.address@nhs.net\|urn:nhs-itk:interaction:primaryEmergencyDepartmentRecipientNHS111CDADocument-v2-0\|PDF\|Primary\|Compressed
 ```
