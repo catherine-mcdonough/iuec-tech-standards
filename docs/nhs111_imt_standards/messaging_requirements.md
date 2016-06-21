@@ -90,7 +90,6 @@ All 111 messaging implementations SHOULD gain full “ITK Application” Accredi
 
 In practice this will involve, in addition to the above, implementing the remaining requirements in the “itk_core” pack – see “**NPFIT-ELIBR-AREL-DST-0422.02 ITK 2.0 Specifications Overview v2.0**” for details of the additional ITK requirements modules that are relevant to this.
 
-It is recognised that the tight timescales for 111 implementation mean that it may not be possible for all implementations to gain full compliance prior to initial 111 go-live. In this case, the supplier MUST provide a self-assessment listing those ITK requirements that they believe they will not meet at initial go live, and MUST agree in writing a date by which they commit to rectify this and gain full ITK Application Accreditation.
 
 ### 4.6 MSG.6 Security based on TLS Mutual Authentication
 The 111 service requires “any-to-any” connections between nodes: call handlers and service providers. Connections are made under the direction of information in the 111 directory of service. The size of the handler and provider population, and the requirement to be able to add handlers and providers with a minimum of disruption, argues against reliance on firewalls to restrict connection access. To use firewalls, would require significant reconfiguration across the estate each time a handler or provider is added.
