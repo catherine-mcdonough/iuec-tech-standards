@@ -15,4 +15,4 @@ This document focuses on the technical elements of information exchange & specif
 standard mechanism to incorporate this implementation. The solution architecture can be
 seen in Figure 1.
 
-![Diagram of current NHS 111 architecture](../images/figure1.png)
+![Diagram of current NHS 111 architecture](../../images/current_nhs111_architecture.png)
