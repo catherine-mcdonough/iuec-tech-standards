@@ -1,9 +1,17 @@
-# Welcome to the NHS Integrated Urgent Care Technical Standards
+# Integrated Urgent & Emergency Care Tech Standards
 
-## 1 Purpose
-The purpose of this document is to provide an interoperability specification to be used for the
-exchange of pathways information for transfer of care between the 111 service providers.
+This is the master respository for the Integrated & Emergency Care Technical Standards documentation.
 
-## 2 Scope
-The scope of this document is to lay down the foundations for specific message interactions
-between the 111 system suppliers.
+### [You can find the main documentation here!](docs/index.md)
+
+
+
+### Contributing
+
+By making this documentation completely open, we hope that the whole community will contribute to making this resource more clear, more accurate, and more complete.
+
+Any contribution is gratefully received - whether it be an entirely new document or a single spelling correction. 
+
+Please feel very welcome to fork this repository and submit pull requests.
+
+If you are not comfortable or familiar with using Github, but wish to contribute - please just email m.stibbs@nhs.net with your contribution and we'll do the rest.
