@@ -1,11 +1,16 @@
-# Integrated Urgent & Emergency Care Tech Standards
+# Integrated Urgent & Emergency Care Technical Standards
 
 This is the master respository for the Integrated & Emergency Care Technical Standards documentation.
 
-### [You can find the main documentation here!](docs/index.md)
 
 
+### [New Integrated Urgent Care Technical Standards](docs/index.md)
 
+### [Existing NHS 111 IM&T Standards](nhs111_imt_standards/index.md)
+These were issued alongside the initial NHS 111 rollout and will gradually be replaced by the new guidance.
+
+
+----
 ### Contributing
 
 By making this documentation completely open, we hope that the whole community will contribute to making this resource more clear, more accurate, and more complete.
