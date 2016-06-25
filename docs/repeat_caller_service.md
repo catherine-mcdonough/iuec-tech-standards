@@ -39,6 +39,17 @@ Using the available search criteria, the RCS will respond to the query to answer
 
 
 
-### Submitting
-
+### Submitting Documents
 Submitted documents are stored for a maximum of 96 hours before they are deleted.
+
+## Requirements for System Vendors
+All IT systems used for receiving initial urgent care encounters must have connectivity to the Repeat Caller Service.
+
+Systems should support both Repeat Caller Queries and CDA submissions at the end of encounters. 
+
+### Submission
+- All systems should submit a CDA document to the Repeat Caller Service upon completion of an encounter.
+
+#### Retries
+- If a submission attempt is unsuccessful, the system supplier must ensure the submission is put onto a retry queue.
+- Systems should continue to retry the submission unless the queued submission is explcitly removed from the submission queue by a user.
