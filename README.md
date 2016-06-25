@@ -6,7 +6,7 @@ This is the master respository for the Integrated & Emergency Care Technical Sta
 
 ### [New Integrated Urgent Care Technical Standards](docs/index.md)
 
-### [Existing NHS 111 IM&T Standards](nhs111_imt_standards/index.md)
+### [Existing NHS 111 IM&T Standards](docs/nhs111_imt_standards/index.md)
 These were issued alongside the initial NHS 111 rollout and will gradually be replaced by the new guidance.
 
 
