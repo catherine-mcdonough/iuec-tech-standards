@@ -1,11 +1,11 @@
-# Repeat Caller Service
+# Repeat Caller Service (RCS)
 
 The Repeat Caller Service is a national service operated by HSCIC and is a core part of the Integrated Urgent Care national architecture.
 
 
 ## How does it work?
 
-### Functions
+### Functionality
 
 The current functions provided by the Repeat Caller Service (RCS) is as follows:
 
@@ -13,7 +13,7 @@ The current functions provided by the Repeat Caller Service (RCS) is as follows:
 - Receive NHS 111 CDA submissions at the end of every NHS 111 encounter
 
 
-### Querying
+### Querying The RCS
 
 NHS 111 services are required to query the RCS at the beginning of each telephone encounter. The query contains a minimal set of patient demographics which are used to identify the caller.
 
@@ -39,17 +39,39 @@ Using the available search criteria, the RCS will respond to the query to answer
 
 
 
-### Submitting Documents
+### Submitting Documents To RCS
+
 Submitted documents are stored for a maximum of 96 hours before they are deleted.
 
-## Requirements for System Vendors
+------
+
+
+
+## Requirement for Integrated Systems
+
 All IT systems used for receiving initial urgent care encounters must have connectivity to the Repeat Caller Service.
 
 Systems should support both Repeat Caller Queries and CDA submissions at the end of encounters. 
 
-### Submission
-- All systems should submit a CDA document to the Repeat Caller Service upon completion of an encounter.
+### General
 
-#### Retries
-- If a submission attempt is unsuccessful, the system supplier must ensure the submission is put onto a retry queue.
-- Systems should continue to retry the submission unless the queued submission is explcitly removed from the submission queue by a user.
+- All systems should submit a valid CDA document to the Repeat Caller Service upon completion of an encounter.
+
+### Configurability
+
+- The following settings should be configurable in the system without requiring new development / releases:
+  - Ability to Enable / Disable Repeat Caller Service interactions
+  - Endpoint URL for the Repeat Caller Service (endpoints for Submissions and Queries should be separately configured)
+  - ​
+
+### Submission Interface
+#### Retry Logic
+- If a submission attempt is unsuccessful, the submission should be queued to retry the submission.
+- Systems should continue to retry the submission until a reasonable number of attempts have failed, or until submission is removed from the queue by a user.
+- Systems should implement retry logic which increases the amount of time between retries with each subsequent retry. This is to ensure that retries attempts do not generate
+
+#### Monitoring
+
+- Systems should appropriate users to failure of submissions, and provide them with appropriate tools to monitor and respond to issues.
+
+### Query Interface
