@@ -8,9 +8,15 @@ These standards outline technical, interoperability, and information requirement
 
 
 
+## Messaging
+
+
+
 ## National Services
 
-[Repeat Caller Service](repeat_caller_service.md)
+[Urgent Care Repeat Caller Service](repeat_caller_service.md)
+
+[Directory of Services Endpoint Service](endpoint_location.md)
 
 Personal Demographics Service
 
