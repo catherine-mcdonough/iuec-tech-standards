@@ -1,5 +1,8 @@
+
 Renewing NHS 111 Endpoint Certificates
 ======================================
+
+[TOC]
 
 ITK certificates provide the security and identification element of existing Integrated Urgent Care interoperability. They are used to provide Mutual Authentication between two communicating parties. Live services operate using spine certificates issued to endpoints on the oneoneone.nhs.uk NHS sub-domain.
 

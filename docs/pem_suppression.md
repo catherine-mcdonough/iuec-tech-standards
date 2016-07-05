@@ -1,5 +1,7 @@
 # GP Messaging Suppression
 
+[TOC]
+
 At the end of an patient journey within Integrated Urgent Care (IUC), a patient's GP practice should be notified, messages should only be sent when an encouter with the IUC service has concluded and no call backs or further care is going to be provided by the service. 
 
 This is to ensure the volume of messages a GP receives is kept to a minimum and the GP isn't receiving duplicate information.
