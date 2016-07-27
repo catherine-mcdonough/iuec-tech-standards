@@ -13,13 +13,13 @@ The current functions provided by the Repeat Caller Service (RCS) is as follows:
 
 
 ## How does it work?
-### Querying The RCS
-NHS 111 services are required to query the RCS at the beginning of each telephone encounter. The query contains a minimal set of patient demographics which are used to identify the caller.
+NHS 111 services are required to search the Repeat Caller Service (RCS) at the beginning of each urgent care encounter. The search contains a minimal set of patient demographics which are used to identify the caller.
 
-Where a caller's identity has been verified against the Personal Demographics Service (PDS), their NHS number will be used as the primary identifier for the query.
+If a caller's identity has been verified against the Personal Demographics Service (PDS), the person's NHS number will be used as the primary search term.
 
-Where a caller's identity has not been verified against PDS, the query will use additional demographic details to try and match the patient:
+If a caller's identity has not been verified against the PDS, recorded demographic information will be used to try and match the person to existing records. The demographic items supported are:
 
+- Verified NHS Number (only included if person is verified against the PDS)
 - First Name
 - Last Name
 - Date Of Birth
@@ -51,14 +51,18 @@ Systems should support both Repeat Caller Queries and CDA submissions at the end
 
 Any system, that is used to manage people who are making first contact with Integrated Urgent Care, should query the Repeat Caller Service to identify whether that person has previously made contact with the Integrated Urgent Care service.
 
+**If a caller's identity has been verified against the Personal Demographics Service (PDS), their NHS number should be included in the query and will be used as the primary search term.**
+
+**If a person's identity has not been verified against the PDS, their NHS number should not be included within the query - the query should only include recorded demographic details.**
+
 If a person is identified as having called twice previously within the preceeding 96 hours the service then they should be transferred to a clinician as a minimum level of priority (anything of a higher priority should be followed).
 
 
-#### Submitting To The RCS
+### Submitting To The RCS
 
 **All systems should submit a CDA document to the Repeat Caller Service upon completion of an encounter.**
 
-#### Managing Failure
+### Managing Failure
 **If a submission attempt is unsuccessful, the system must continue trying to submit the document for 96 hours.**
 
 **Systems should continue to retry the submission unless the queued submission is explcitly removed from the submission queue by a user.**
