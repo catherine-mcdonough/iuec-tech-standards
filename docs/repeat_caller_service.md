@@ -1,7 +1,5 @@
 # Repeat Caller Service (RCS)
 
-[TOC]
-
 ## What is the Repeat Caller Service?
 The Repeat Caller Service is a national service operated by HSCIC and is a core part of the Integrated Urgent Care national architecture.
 
